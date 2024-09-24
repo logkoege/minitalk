@@ -35,7 +35,7 @@ int	main(int argc, char **argv)
 	(void)argv;
 	if (argc != 1)
 	{
-		ft_printf("Error\n");
+		write(1, "Error\n", 6);
 		return (1);
 	}
 	pid = getpid();

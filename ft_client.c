@@ -6,7 +6,7 @@
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 13:56:18 by logkoege          #+#    #+#             */
-/*   Updated: 2024/09/22 03:07:01 by logkoege         ###   ########.fr       */
+/*   Updated: 2024/09/23 00:39:50 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	main(int argc, char **argv)
 	i = 0;
 	if (argc != 3)
 	{
-		ft_printf("Error\n");
+		write(1, "Error\n", 6);
 		return (1);
 	}
 	else
