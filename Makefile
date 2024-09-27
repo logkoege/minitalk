@@ -14,7 +14,14 @@ CFLAGS = -Wall -Werror -Wextra
 CC = gcc
 CLIENT = ft_client
 SERVER = ft_server
-PRINTF_SRC = printf/ft_printf.c printf/ft_print_char.c printf/ft_print_str.c printf/ft_print_ptr.c printf/ft_print_nbr.c printf/ft_print_unsigned.c printf/ft_print_hex.c printf/ft_print_percent.c
+PRINTF_SRC = printf/ft_printf.c			\
+		printf/ft_print_char.c		\
+		printf/ft_print_str.c		\
+		printf/ft_print_ptr.c		\
+		printf/ft_print_nbr.c		\
+		printf/ft_print_unsigned.c	\
+		printf/ft_print_hex.c		\
+		printf/ft_print_percent.c	\
 
 all: $(CLIENT) $(SERVER)
 
