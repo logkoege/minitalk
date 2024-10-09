@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_print_percent.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 13:56:48 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/09 22:43:43 by logkoege         ###   ########.fr       */
+/*   Created: 2024/05/14 21:00:45 by logkoege          #+#    #+#             */
+/*   Updated: 2024/05/16 10:34:47 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "ft_printf.h"
 
-# include "ft_printf.h"
-# include <signal.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-#endif
+int	ft_print_percent(void)
+{
+	write(1, "%", 1);
+	return (1);
+}

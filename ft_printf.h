@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 13:56:48 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/09 22:43:43 by logkoege         ###   ########.fr       */
+/*   Created: 2024/05/09 21:50:24 by logkoege          #+#    #+#             */
+/*   Updated: 2024/10/09 23:01:21 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-# include "ft_printf.h"
-# include <signal.h>
+# include <stdlib.h>
+# include <stdarg.h>
 # include <unistd.h>
 # include <stdio.h>
-# include <stdlib.h>
+
+int		ft_strlen(char *str);
+int		ft_printf(const char *str, ...);
+int		ft_print_char(int c);
+int		ft_print_str(char *str);
+int		ft_print_ptr(unsigned long long ptr);
+int		ft_print_nbr(int n);
+int		ft_print_unsigned(unsigned int n);
+int		ft_print_hex(unsigned int num, const char format);
+int		ft_print_percent(void);
+int		ft_putchar_fd(char c, int fd);
 
 #endif

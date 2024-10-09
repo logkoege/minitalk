@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 13:56:48 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/09 22:43:43 by logkoege         ###   ########.fr       */
+/*   Created: 2024/05/18 03:33:00 by logkoege          #+#    #+#             */
+/*   Updated: 2024/05/18 14:33:32 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "ft_printf.h"
 
-# include "ft_printf.h"
-# include <signal.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-#endif
+int	ft_print_char(int c)
+{
+	write(1, &c, 1);
+	return (1);
+}
