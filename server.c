@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "minitalk.h"
-#include <signal.h>
-#include <unistd.h>
-#include <stdio.h>
 
 void	ft_btoa(int sig)
 {
@@ -36,7 +33,7 @@ int	main(void)
 	int	pid;
 
 	pid = getpid();
-	printf("Server PID: %d\n", pid);
+	ft_printf("Server PID: %d\n", pid);
 	signal(SIGUSR1, ft_btoa);
 	signal(SIGUSR2, ft_btoa);
 	while (1)
