@@ -6,21 +6,11 @@
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 21:01:20 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/09 23:17:30 by logkoege         ###   ########.fr       */
+/*   Updated: 2024/05/18 14:45:58 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 int	ft_print_str(char *str)
 {

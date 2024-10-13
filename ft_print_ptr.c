@@ -57,9 +57,12 @@ int	ft_print_ptr(unsigned long long ptr)
 		write(1, "(nil)", 5);
 		return (5);
 	}
-	len = len + write(1, "0x", 2);
-	ft_put_ptr(ptr);
-	len = len + ft_ptr_len(ptr);
+	else
+	{
+		len = len + write(1, "0x", 2);
+		ft_put_ptr(ptr);
+		len = len + ft_ptr_len(ptr);
+	}
 	return (len);
 }
 

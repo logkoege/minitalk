@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   ft_server.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 14:01:26 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/10 00:07:40 by logkoege         ###   ########.fr       */
+/*   Updated: 2024/09/22 02:51:39 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,29 @@ void	ft_btoa(int sig)
 	bit++;
 	if (bit == 8)
 	{
-		write(1, &i, 1);
+		ft_printf("%c", i);
 		bit = 0;
 		i = 0;
 	}
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
 	int	pid;
 
+	(void)argv;
+	if (argc != 1)
+	{
+		write(1, "Error\n", 6);
+		return (1);
+	}
 	pid = getpid();
-	ft_printf("Server PID: %d\n", pid);
-	signal(SIGUSR1, ft_btoa);
-	signal(SIGUSR2, ft_btoa);
-	while (1)
-		pause();
+	ft_printf("%d\n", pid);
+	while (argc == 1)
+	{
+		signal(SIGUSR1, ft_btoa);
+		signal(SIGUSR2, ft_btoa);
+		pause ();
+	}
 	return (0);
 }

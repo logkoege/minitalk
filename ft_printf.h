@@ -6,7 +6,7 @@
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 21:50:24 by logkoege          #+#    #+#             */
-/*   Updated: 2024/10/09 23:01:21 by logkoege         ###   ########.fr       */
+/*   Updated: 2024/05/18 18:50:51 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <unistd.h>
 # include <stdio.h>
 
-int		ft_strlen(char *str);
 int		ft_printf(const char *str, ...);
 int		ft_print_char(int c);
 int		ft_print_str(char *str);
